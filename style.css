@@ -1,0 +1,391 @@
+body{
+    background: white;    
+    top:0;
+    left:0;
+    
+
+    overflow-x: hidden;
+}
+#logo{
+    height:12vh;
+    margin-top: 0vh;
+    float:left;
+    cursor: pointer;
+}
+ul{
+    float:right;
+    display:flex;
+    list-style: none;
+}
+ul li{
+    cursor: pointer;
+    margin-top: :10vh;
+    padding:10px 20px;
+    
+}
+nav{
+    position: fixed;
+    
+    background:rgba(197,57,43,1);
+    margin-top:-8;
+    margin-left:-8;
+    box-shadow: -5px 5px 20px #000;
+    width:100%;
+    height:12%;
+}
+ul li:hover{
+    background: white;
+    border-radius: 50px;
+    transition: all ease-in-out .5s;
+}
+.aactive{
+    background: white;
+    border-radius: 50px;
+    color:#c0392b;
+}
+.aactive a{
+    color:#c0392b;
+}
+ul li a{
+    
+    color:white;
+    text-decoration: none;
+    
+}
+ul li:hover a{
+    color:black;
+    transition: all ease-in-out .5s;
+}
+.sec1{
+   z-index: 0;
+    background: #c0392b;
+    height:auto;
+    width:103%;
+    margin-left:-10;
+    margin-top:-8;
+    padding-top: 30vh
+        
+}
+.sec2{
+   z-index: 0;
+    background: rgba(255,255,255,0.7);
+    height:70vh;
+    padding:10vh 2vw; 
+    width:100%;
+    margin-left:-10;
+   
+    
+}
+#centerhero{
+     width:35vw;
+}
+.selectbtn{
+   padding:2vh;
+    border:0px solid white;
+    background: white;
+    color:#c0392b;
+    width:100%;
+    outline: none;
+     cursor:pointer;    
+    transition: all ease-in-out .5s;
+}
+.selectbtn:hover{
+    background: #c0392b;
+    color:white;
+}
+#down{
+    width:10vh;
+    margin-top:8vh;
+}
+.contactsec{
+     background:rgba(197,57,43,0.7); 
+    height:70vh;
+    width:103%;
+    margin-left:-10;
+    padding-top:0;
+    
+}
+.orderdetails{
+    width:100%;
+    height:100vh;
+    font-size:1.2em;
+    background: white;
+    font-family:"Segoe UI Light";
+    align-content: center;
+}
+#orderform{
+    width:50vw;
+    height:55vh;
+    
+    padding:2vh 5vw;
+    border:1px solid rgb(197,57,43);
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgb(197,57,43);
+    margin:5vh auto;
+}
+#orderlabel{
+    text-align: center;
+    text-transform: uppercase;
+}
+#orderlabel2{
+    text-align: center;
+    
+}
+.redarea{
+      background:rgba(197,57,43,0.7); 
+    height:15vh;
+    margin-left:-10;
+    margin-top:-8;
+    width:103%;
+    padding-top: 15vh
+}
+.textf{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 2vh 3vh;
+    color:white;
+    margin-top: 8px;
+    font-family: "Segoe UI";
+    font-size: 18;
+    outline:none;
+    text-align: left;
+    transition: width .5s;
+    width:40vw;
+}
+input:focus{
+border-bottom:1px solid black;
+    transition: all ease-in-out .4s;
+}
+::placeholder {
+    color: white;
+    
+}
+.contactleft{
+ float:left;
+    padding-top:5vh;
+    margin-left:5vw;
+}
+.submitbtn{
+    float:left;
+    margin-top:2vh;
+    padding:2vh 3vw;
+    background:none;
+    color:white;
+    font-size:15;
+    margin-top: 3vh;
+    font-family: "Segoe UI";
+    border:1px solid white;
+    outline:none;
+    font-weight: 300;
+    transition:all ease-in-out .8s;
+    cursor:pointer;
+}
+.submitbtn:hover{
+    background: white;
+    font-size:42;
+    color:rgba(197,57,43,1);
+    
+}
+.contactright{
+    width:40vw;
+    float:right;
+    color:white;
+    padding-right:8vw;
+    background: none;
+    height:100vh;
+}
+.contactright h1{
+    font-size:2em;
+}
+.res2{
+    margin-top:30vh;
+    height:100vh;
+    font-family:"Segoe UI Light";
+    
+}
+.secrec{
+       z-index: 0;
+    background: rgba(197,57,43,1);;
+    height:20vh;
+    width:102%;
+    margin-left:-8;
+    margin-top:-8;
+    padding-top: 20vh;
+        font-family:"Segoe UI"
+}
+#reslogo{
+    
+    height:40vh;
+}
+#resmen{
+    font-size:2em;
+    text-align: left;
+}
+#reswrapper{
+    width:100%;
+    align-content: center;
+    padding-left:10vw;
+}
+#menulogo{
+    height:1em;
+    
+}
+#burgerbox{
+    display:inline-table;
+    box-shadow: 0px 0px 1px #000;
+    padding:1em;
+    margin:1vw 1vw;
+    width:15vw;
+}
+#burger{
+    display:block;
+    margin:0 auto;
+    width:180px;
+}
+#brgrname{
+    text-align: center;
+    font-size:1.2em;
+}
+.orderbtn{
+    text-align: center;
+    padding:5px 2em;
+    font-size:.8em;
+    width:100%;
+    color:rgb(197,57,34);
+    background:white;
+    border:1px solid rgb(197,57,34);
+    outline:none;
+    
+    border-radius: 50px;
+    cursor:pointer;
+    text-transform: uppercase;
+    
+    transition: all ease-in-out .4s;
+}
+.orderbtn:hover{
+    background: rgb(197,57,34);
+            
+    color:white;
+}
+
+.form2{
+    align-content: center;
+    margin:0 auto;
+    width: 100%;
+}
+.textf2{
+    
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(197,57,34);
+    padding: 2vh 0vh;
+    color:rgb(197,57,34);
+    margin-top: 8px;
+    font-family: "Segoe UI";
+    font-size: 15;
+    outline:none;
+    text-align: left;
+    transition: width .5s;
+    width:40vw;
+    
+}
+::placeholder{
+    color:black;
+}
+.submitbtn2{
+    text-transform: uppercase;
+    padding:2vh 3vw;
+    background:none;
+    border:1px solid rgb(197,57,34);
+    color:rgb(197,57,34);
+    font-size:15;
+    border-radius: 50px;
+    margin:3vh auto;
+    font-family: "Segoe UI";
+    width:15vw;
+    outline:none;
+    font-weight: 300;
+    transition: width 2s;
+    cursor:pointer;
+}
+.submitbtn2:hover{
+    background: red;
+    width:90%;
+     transition: width 2s;
+    color:white;
+    
+}
+.footer{
+    width:104%;
+    background:rgba(197,57,43,1);
+    color:white;
+    font-family:"Segoe UI Light";
+    height:15vh;
+    outline: none;
+    margin-left:-1vw;
+    position:inherit;
+    padding-bottom:3vh;
+}
+#ab{
+    font-size: 3em;
+    font-family: "Segoe UI";
+    color:rgb(197,57,43);
+    text-transform: uppercase;
+    
+}
+#ab2{
+    font-size: 1.5em;
+    font-family: "Segoe UI";
+    color:white;
+    text-transform: uppercase;
+    
+}
+#stepbox{
+    display:inline-table;
+    box-shadow: 0px 0px 1px #000;
+    padding:1em;
+    margin:3vh 1vw;
+    width:200px;
+    height:300px;
+    color:rgb(197,57,43);
+    font-family: "Segoe UI Light";
+    font-size: 1.5em;
+    
+}
+#stepsimg{
+    margin:0 auto;
+}
+.sectionwhite{
+    height:autovh;
+    padding:5vw 2vh;
+}
+.sectionred{
+    height:auto;
+    background: rgb(197,57,43);
+    margin-left:-10;
+    width:101%;
+    color:white;
+    font-family: "Segoe UI Light";
+    font-size:2em;  
+    padding:15vh 2vw;
+}
+#restbox{
+    display: inline-block;
+    background: white;
+    border-radius: 15px;
+    height:220px;
+    margin:2vh 15px;
+    border:0px solid white;
+    width:200px;
+}
+#restboximg{
+    width:200px;
+}
+@media screen and (max-width:720px){
+  
+    nav{
+        display:none;
+    }
+    
+}

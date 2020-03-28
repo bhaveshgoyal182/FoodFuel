@@ -1,38 +1,67 @@
 <html>
-<head>
-<link rel="icon" type="image/png" href="images\logo2.png">
-<link rel="stylesheet" type="text/css" href="main.css">
-<title>Contact Us | Restorderant</title>
-</head>
-<body>
-<video autoplay loop id="bgvid" src="video\My Movie.mp4" type="video/mp4"></video>
-<div id="overlay" style="width:101.5%;margin-left:-1%;margin-top:-1%;height:100%;background:rgba(0, 0, 0, 0.4);";">
-<div id="Navigation" style="position:fixed;float:left;width:101.5%;height:14%;background:rgba(0, 0, 0, 0.41);border: 0px Solid;margin-top:-1%;margin-left:-1%;">
-<div style="width:20%;height:8%;margin-top:2.5%;margin-left:2%;"><img src="images\logo.png" /></div>
-
-<div style="width:20%;height:8%;margin-top:-2.5%;margin-left:50%"><nav style="position: fixed;"><ul id="mainmenu">
-<li id="menu"><a href="index.html" id="link"><b>Home</b></a></li>
-<li id="menu"><a href="test.html" id="link"><b>Place An Order</b></a></li>
-<li id="menu"><a href="about.html" id="link"><b>About Us</b></a></li>
-<li id="menu"><a href="contact.html" id="link"><b>Contact Us</b></a></li>
-</nav></div>
-</div>
-
-
-</div>
-<div id="text-container2" style="width:100%;margin-left:auto;margin-top:-30%;height:10%;"><center><img width="40%" src="images\textabout.png" /><br><font color="white" size="25" face="Freestyle Script">Whenever You Want, Wherever You Want.<br><br><a id="link" href="#aboutcontainer">Contact Us<br><img src="images\arrowdown.gif" width="2%"/></a></font></center>
-</div>
-<center>
-<div id="aboutcontainer" style="width:80%;margin-left:0%;padding-left:40px;padding-right:40px;margin-top:20%;height:120%;background:rgba(255,255,255,1);">
-<br><br><br><img width="10%" src="images\logo2.png"/><br><font face="Segoe UI" size="6" color="black">Restorderant</font><font face="Segoe UI Light" size="4%">
-         <p style="margin-left:20%;margin-right:20%;"><img width="3%" src="images\phone.png" /><b>+91-9876543210</b>   |  Problem or Questions? Call Us.<br><img width="3%" src="images\email.png" /><b>  customercare@restorderant.com</b>   |  Write An Email.<br><b>Restorderant Online Services Pvt. Ltd.,<br>Model Town, Jalandhar, Punjab-144001</b></p><br><font size="6">Get Your Favourite Food In 4 Simple Steps.</font></font>
-</div>
-<center>
-<div style="margin-top:-340px;margin-left:-66.5%;padding-left:10px;padding-top:5px;padding right:15px;width:230px;height:300px;background:rgba(0,0,0,0.6);"><center><img src="images\steps\1.png" /><br><br><font face="Segoe UI Light" size="5%" color="white"><b>1. Search</b><br><br>Find restaurants that deliver to you by entering your address.</font></div>
-<div style="margin-top:-305px;margin-left:-21.5%;padding-left:10px;padding-top:5px;padding right:15px;width:230px;height:300px;background:rgba(0,0,0,0.6);"><center><img src="images\steps\2.png" /><br><br><font face="Segoe UI Light" size="5%" color="white"><b>2. Choose</b><br><br>Browse hundreds of menus to find the food you like.</font></div>
-<div style="margin-top:-305px;margin-left:23%;padding-left:10px;padding-top:5px;padding right:15px;width:230px;height:300px;background:rgba(0,0,0,0.6);"><center><img src="images\steps\3.png" /><br><br><font face="Segoe UI Light" size="5%" color="white"><b>3. Pay</b><br><br>Pay fast & secure online or on cash on delivery.</font></div>
-<div style="margin-top:-305px;margin-left:66.5%;padding-left:10px;padding-top:5px;padding right:15px;width:230px;height:300px;background:rgba(0,0,0,0.6);"><center><img src="images\steps\4.png" /><br><br><font face="Segoe UI Light" size="5%" color="white"><b>4. Enjoy</b><br><br>Food is prepared & delivered to your door.</font></div>
-</div><center>
-
-</body>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style2.css">
+    </head>
+    <body style="background: url('bg2.jpg');background-size: cover;overflow-y: hidden;">
+    
+        <nav>
+            <font face="Segoe UI Light">
+               <a href="index.html"> <img src="logo.png" id="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+            </font>
+        </nav>
+        <section class="redarea">
+            <center>
+            <font face="Segoe UI Light" color="white" size="6">
+                Zomato Care
+                </font><br>
+                <font face="Segoe UI Light" color="white" size="3">
+                    Any query? Contact our friendly 24x7 customer support
+                </font>    
+            </center>
+        </section>
+    <div class="contactsec">
+        <div class="contactleft">    
+        <center>
+            <form action="contact.php" method="get">
+                
+                <input name="Name" class="textf" type="textbox" placeholder="Full Name" required/><br>
+                <input name="EmailID" class="textf" type="email" 
+                 placeholder="Email Address" required/><br>
+                <input name="TelNo" class="textf" type="tel" 
+                 placeholder="Phone Number" required/><br>
+                <input name="stat" value="1" hidden />
+                <input name="msg" class="textf" type="textarea" id="msg"  placeholder="Message"
+                    required/><br>
+                <input class="submitbtn" type="submit" value="Send Message"/><br><br>
+                <font color="white" face="Segoe UI Light"><?php 
+                                    
+                                        $a=0;
+                                    if(isset($_GET['stat'])){
+                                        $a=$_GET['stat']; 
+                                    }
+                                    if ($a=1){
+                                        echo "Your message has been succesfully sent.";
+                                    
+                                    } ?></font>
+                </form>
+                
+                
+        </center>
+        </div> 
+        <div class="contactright">
+            <font face="Segoe UI Light">
+                <h1>Want To Reach Us Instead?</h1>
+                Call us at <b>+91 011 30806376</b><br>Email Us at <b>contact@zomato.in</b><br>
+                <br>Or <b>visit your Nearest Zomato Office</b>
+                <br><p align="justify">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+            </font>            
+        </div>
+        </div>
+   
+    </body>
 </html>
