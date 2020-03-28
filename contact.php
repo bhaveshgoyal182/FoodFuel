@@ -2,11 +2,11 @@
     <head>
         <link rel="stylesheet" type="text/css" href="style2.css">
     </head>
-    <body style="background: url('bg2.jpg');background-size: cover;overflow-y: hidden;">
+    <body style="background: url('assets/img/bg2.jpg');background-size: cover;overflow-y: hidden;">
     
         <nav>
             <font face="Segoe UI Light">
-               <a href="index.html"> <img src="logo.png" id="logo"></a>
+               <a href="index.html"> <img src="assets/img/logo.png" id="logo"></a>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>

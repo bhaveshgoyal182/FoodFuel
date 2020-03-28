@@ -6,7 +6,7 @@
     
         <nav>
             <font face="Segoe UI Light">
-             <a href="index.html"> <img src="logo.png" id="logo"></a>
+             <a href="index.html"> <img src="assets/img/logo.png" id="logo"></a>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
